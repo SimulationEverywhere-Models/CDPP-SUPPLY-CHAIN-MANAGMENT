@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://www.example.org/DEVSModeler" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <GGADAtomicModelType xmi:id="_Gmg_ACrMEeGU7IqK4hoajg" defined="true" sourceFileRelativePath="PressRoomType.cdd" initialState="_Gmg_AyrMEeGU7IqK4hoajg">
+    <ports xmi:type="InputAtomicPort" xmi:id="_Gmg_ASrMEeGU7IqK4hoajg" portName="Press"/>
+    <ports xmi:type="OutputAtomicPort" xmi:id="_Gmg_AirMEeGU7IqK4hoajg" portName="BlilsterPack" portType="OUTPUT_PORT"/>
+    <states xmi:type="State" xmi:id="_Gmg_AyrMEeGU7IqK4hoajg" name="wait">
+      <timeAdvance xmi:type="TimeAdvance" xmi:id="_Gmg_BCrMEeGU7IqK4hoajg" hour="16"/>
+    </states>
+    <states xmi:type="State" xmi:id="_Gmg_BSrMEeGU7IqK4hoajg" name="Pressing">
+      <timeAdvance xmi:type="TimeAdvance" xmi:id="_Gmg_BirMEeGU7IqK4hoajg" hour="4"/>
+    </states>
+    <states xmi:type="State" xmi:id="_Gmg_ByrMEeGU7IqK4hoajg" name="ready">
+      <timeAdvance xmi:type="TimeAdvance" xmi:id="_Gmg_CCrMEeGU7IqK4hoajg"/>
+    </states>
+    <states xmi:type="State" xmi:id="_Gmg_CSrMEeGU7IqK4hoajg" name="InvalidInput">
+      <timeAdvance xmi:type="TimeAdvance" xmi:id="_Gmg_CirMEeGU7IqK4hoajg"/>
+    </states>
+    <variables xmi:type="Variable" xmi:id="_Gmg_CyrMEeGU7IqK4hoajg" name="Pressed">
+      <defaultValue xmi:type="Constant" xmi:id="_Gmg_DCrMEeGU7IqK4hoajg" value="0"/>
+    </variables>
+    <variables xmi:type="Variable" xmi:id="_Gmg_DSrMEeGU7IqK4hoajg" name="PressStat">
+      <defaultValue xmi:type="Constant" xmi:id="_Gmg_DirMEeGU7IqK4hoajg" value="0"/>
+    </variables>
+    <links xmi:type="ExternalTransition" xmi:id="_Gmg_DyrMEeGU7IqK4hoajg" target="_Gmg_ByrMEeGU7IqK4hoajg" source="_Gmg_AyrMEeGU7IqK4hoajg">
+      <condition xmi:type="Condition" xmi:id="_Gmg_ECrMEeGU7IqK4hoajg">
+        <expression xmi:type="AndFunction" xmi:id="_Gmg_ESrMEeGU7IqK4hoajg" parameters="_Gmg_EirMEeGU7IqK4hoajg _Gmg_FCrMEeGU7IqK4hoajg">
+          <containedParameters xmi:type="EqualFunction" xmi:id="_Gmg_EirMEeGU7IqK4hoajg" parameters="_Gmg_ASrMEeGU7IqK4hoajg _Gmg_EyrMEeGU7IqK4hoajg">
+            <containedParameters xmi:type="Constant" xmi:id="_Gmg_EyrMEeGU7IqK4hoajg"/>
+          </containedParameters>
+          <containedParameters xmi:type="EqualFunction" xmi:id="_Gmg_FCrMEeGU7IqK4hoajg" parameters="_Gmg_DSrMEeGU7IqK4hoajg _Gmg_FSrMEeGU7IqK4hoajg">
+            <containedParameters xmi:type="Constant" xmi:id="_Gmg_FSrMEeGU7IqK4hoajg" value="0"/>
+          </containedParameters>
+        </expression>
+        <value xmi:type="Constant" xmi:id="_Gmg_FirMEeGU7IqK4hoajg"/>
+      </condition>
+      <actions xmi:type="Action" xmi:id="_Gmg_FyrMEeGU7IqK4hoajg" variable="_Gmg_DSrMEeGU7IqK4hoajg" expression="_Gmg_GCrMEeGU7IqK4hoajg">
+        <containedExpression xmi:type="Constant" xmi:id="_Gmg_GCrMEeGU7IqK4hoajg"/>
+      </actions>
+      <actions xmi:type="Action" xmi:id="_Gmg_GSrMEeGU7IqK4hoajg" variable="_Gmg_CyrMEeGU7IqK4hoajg" expression="_Gmg_GirMEeGU7IqK4hoajg">
+        <containedExpression xmi:type="Constant" xmi:id="_Gmg_GirMEeGU7IqK4hoajg" value="0"/>
+      </actions>
+    </links>
+    <links xmi:type="ExternalTransition" xmi:id="_Gmg_GyrMEeGU7IqK4hoajg" target="_Gmg_CSrMEeGU7IqK4hoajg" source="_Gmg_AyrMEeGU7IqK4hoajg">
+      <condition xmi:type="Condition" xmi:id="_Gmg_HCrMEeGU7IqK4hoajg">
+        <expression xmi:type="OrFunction" xmi:id="_Gmg_HSrMEeGU7IqK4hoajg" parameters="_Gmg_HirMEeGU7IqK4hoajg _Gmg_ICrMEeGU7IqK4hoajg">
+          <containedParameters xmi:type="NotEqualFunction" xmi:id="_Gmg_HirMEeGU7IqK4hoajg" parameters="_Gmg_ASrMEeGU7IqK4hoajg _Gmg_HyrMEeGU7IqK4hoajg">
+            <containedParameters xmi:type="Constant" xmi:id="_Gmg_HyrMEeGU7IqK4hoajg"/>
+          </containedParameters>
+          <containedParameters xmi:type="EqualFunction" xmi:id="_Gmg_ICrMEeGU7IqK4hoajg" parameters="_Gmg_DSrMEeGU7IqK4hoajg _Gmg_ISrMEeGU7IqK4hoajg">
+            <containedParameters xmi:type="Constant" xmi:id="_Gmg_ISrMEeGU7IqK4hoajg"/>
+          </containedParameters>
+        </expression>
+        <value xmi:type="Constant" xmi:id="_Gmg_IirMEeGU7IqK4hoajg"/>
+      </condition>
+    </links>
+    <links xmi:type="InternalTransition" xmi:id="_Gmg_IyrMEeGU7IqK4hoajg" target="_Gmg_AyrMEeGU7IqK4hoajg" source="_Gmg_CSrMEeGU7IqK4hoajg"/>
+    <links xmi:type="InternalTransition" xmi:id="_Gmg_JCrMEeGU7IqK4hoajg" target="_Gmg_BSrMEeGU7IqK4hoajg" source="_Gmg_ByrMEeGU7IqK4hoajg"/>
+    <links xmi:type="InternalTransition" xmi:id="_Gmg_JSrMEeGU7IqK4hoajg" target="_Gmg_AyrMEeGU7IqK4hoajg" source="_Gmg_BSrMEeGU7IqK4hoajg">
+      <portValues xmi:type="PortValue" xmi:id="_Gmg_JirMEeGU7IqK4hoajg" port="_Gmg_AirMEeGU7IqK4hoajg" value="_Gmg_DSrMEeGU7IqK4hoajg"/>
+      <actions xmi:type="Action" xmi:id="_Gmg_JyrMEeGU7IqK4hoajg" variable="_Gmg_DSrMEeGU7IqK4hoajg" expression="_Gmg_KCrMEeGU7IqK4hoajg">
+        <containedExpression xmi:type="Constant" xmi:id="_Gmg_KCrMEeGU7IqK4hoajg" value="0"/>
+      </actions>
+      <actions xmi:type="Action" xmi:id="_Gmg_KSrMEeGU7IqK4hoajg" variable="_Gmg_CyrMEeGU7IqK4hoajg" expression="_Gmg_KirMEeGU7IqK4hoajg">
+        <containedExpression xmi:type="Constant" xmi:id="_Gmg_KirMEeGU7IqK4hoajg"/>
+      </actions>
+    </links>
+  </GGADAtomicModelType>
+  <notation:Diagram xmi:id="_Gmg_KyrMEeGU7IqK4hoajg" type="DEVSGGAD" element="_Gmg_ACrMEeGU7IqK4hoajg" name="PressRoomType.ggaddesigner" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_eaVnQCrREeGU7IqK4hoajg" type="2001" element="_Gmg_AyrMEeGU7IqK4hoajg">
+      <children xmi:type="notation:Node" xmi:id="_eaVnRSrREeGU7IqK4hoajg" type="5001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_eaVnQSrREeGU7IqK4hoajg"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_eaVnQirREeGU7IqK4hoajg"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_eaVnQyrREeGU7IqK4hoajg"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eaVnRCrREeGU7IqK4hoajg" x="85" y="280"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_eaVnRirREeGU7IqK4hoajg" type="2001" element="_Gmg_BSrMEeGU7IqK4hoajg">
+      <children xmi:type="notation:Node" xmi:id="_eaVnSyrREeGU7IqK4hoajg" type="5001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_eaVnRyrREeGU7IqK4hoajg"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_eaVnSCrREeGU7IqK4hoajg"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_eaVnSSrREeGU7IqK4hoajg"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eaVnSirREeGU7IqK4hoajg" y="140"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_eaVnTCrREeGU7IqK4hoajg" type="2001" element="_Gmg_ByrMEeGU7IqK4hoajg">
+      <children xmi:type="notation:Node" xmi:id="_eaVnUSrREeGU7IqK4hoajg" type="5001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_eaVnTSrREeGU7IqK4hoajg"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_eaVnTirREeGU7IqK4hoajg"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_eaVnTyrREeGU7IqK4hoajg"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eaVnUCrREeGU7IqK4hoajg" x="85"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_eaVnUirREeGU7IqK4hoajg" type="2001" element="_Gmg_CSrMEeGU7IqK4hoajg">
+      <children xmi:type="notation:Node" xmi:id="_eaVnVyrREeGU7IqK4hoajg" type="5001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_eaVnUyrREeGU7IqK4hoajg"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_eaVnVCrREeGU7IqK4hoajg"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_eaVnVSrREeGU7IqK4hoajg"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eaVnVirREeGU7IqK4hoajg" x="171" y="140"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_eaVnWCrREeGU7IqK4hoajg" type="2002" element="_Gmg_ASrMEeGU7IqK4hoajg">
+      <children xmi:type="notation:Node" xmi:id="_eaVnXSrREeGU7IqK4hoajg" type="5002"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_eaVnWSrREeGU7IqK4hoajg"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_eaVnWirREeGU7IqK4hoajg"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_eaVnWyrREeGU7IqK4hoajg"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eaVnXCrREeGU7IqK4hoajg" x="225"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_eaVnXirREeGU7IqK4hoajg" type="2003" element="_Gmg_AirMEeGU7IqK4hoajg">
+      <children xmi:type="notation:Node" xmi:id="_eaVnYyrREeGU7IqK4hoajg" type="5003"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_eaVnXyrREeGU7IqK4hoajg"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_eaVnYCrREeGU7IqK4hoajg"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_eaVnYSrREeGU7IqK4hoajg"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eaVnYirREeGU7IqK4hoajg" x="355"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_eaVnZCrREeGU7IqK4hoajg" type="2004" element="_Gmg_CyrMEeGU7IqK4hoajg">
+      <children xmi:type="notation:Node" xmi:id="_eaVnZyrREeGU7IqK4hoajg" type="5004"/>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_eaVnZSrREeGU7IqK4hoajg" fontName="Segoe UI"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eaVnZirREeGU7IqK4hoajg" x="485"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_eaVnaCrREeGU7IqK4hoajg" type="2004" element="_Gmg_DSrMEeGU7IqK4hoajg">
+      <children xmi:type="notation:Node" xmi:id="_eaVnayrREeGU7IqK4hoajg" type="5004"/>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_eaVnaSrREeGU7IqK4hoajg" fontName="Segoe UI"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eaVnairREeGU7IqK4hoajg" x="492" y="36"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_Gmg_LCrMEeGU7IqK4hoajg"/>
+  </notation:Diagram>
+</xmi:XMI>

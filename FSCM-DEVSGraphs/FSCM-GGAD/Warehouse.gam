@@ -1,0 +1,201 @@
+# Filename:Warehouse.gam
+# export classpath:Warehouse.cdd
+# Title:Top
+# background:
+# cant units:6
+# 	Unit class:gui.model.unit.AtomicUnit
+# 	Unique ID:1
+# 	location x:430
+# 	location y:40
+# 	name:active
+# 	Atomic TL:22:00:00:00
+# 	Unit class:gui.model.unit.AtomicUnit
+# 	Unique ID:2
+# 	location x:74
+# 	location y:180
+# 	name:RawReceived
+# 	Atomic TL:00:00:00:00
+# 	Unit class:gui.model.unit.AtomicUnit
+# 	Unique ID:3
+# 	location x:16
+# 	location y:484
+# 	name:FinishedReceived
+# 	Atomic TL:00:00:00:00
+# 	Unit class:gui.model.unit.AtomicUnit
+# 	Unique ID:4
+# 	location x:352
+# 	location y:532
+# 	name:SendRaw
+# 	Atomic TL:00:00:00:00
+# 	Unit class:gui.model.unit.AtomicUnit
+# 	Unique ID:5
+# 	location x:652
+# 	location y:472
+# 	name:SendFinished
+# 	Atomic TL:00:00:00:00
+# 	Unit class:gui.model.unit.AtomicUnit
+# 	Unique ID:6
+# 	location x:892
+# 	location y:244
+# 	name:Invalidinput
+# 	Atomic TL:00:00:00:00
+# Cant Ports:5
+# 	Port Class:gui.model.port.AtomicPort
+# 	Port UniqueId:7
+# 	Port ID:FacWar_in1
+# 	Port In/Out:In
+# 	Port Type:Integer
+# 	Port Class:gui.model.port.AtomicPort
+# 	Port UniqueId:8
+# 	Port ID:FacWar_in2
+# 	Port In/Out:In
+# 	Port Type:Integer
+# 	Port Class:gui.model.port.AtomicPort
+# 	Port UniqueId:9
+# 	Port ID:Send
+# 	Port In/Out:In
+# 	Port Type:Integer
+# 	Port Class:gui.model.port.AtomicPort
+# 	Port UniqueId:10
+# 	Port ID:FacWar_out1
+# 	Port In/Out:Out
+# 	Port Type:Integer
+# 	Port Class:gui.model.port.AtomicPort
+# 	Port UniqueId:11
+# 	Port ID:FacWar_out2
+# 	Port In/Out:Out
+# 	Port Type:Integer
+# Cant Links:12
+# 		Link Type:gui.model.link.AtomicExternalLink
+# 		Link unique Id:12
+# 		start unit Point:1
+# 		end unit Point:2
+# 		cant Expressions:1
+# 		Expr Type:gui.model.Function
+# 		Expr:UNTRANSLATED EXPRESSION
+# 		Value:1
+# 		cant Actions:1
+# 		Action:UNTRANSLATED ACTION
+# 		Action Id:13
+# 		Link Type:gui.model.link.AtomicExternalLink
+# 		Link unique Id:14
+# 		start unit Point:1
+# 		end unit Point:6
+# 		cant Expressions:1
+# 		Expr Type:gui.model.Function
+# 		Expr:UNTRANSLATED EXPRESSION
+# 		Value:1
+# 		cant Actions:0
+# 		Link Type:gui.model.link.AtomicExternalLink
+# 		Link unique Id:15
+# 		start unit Point:1
+# 		end unit Point:6
+# 		cant Expressions:1
+# 		Expr Type:gui.model.Function
+# 		Expr:UNTRANSLATED EXPRESSION
+# 		Value:1
+# 		cant Actions:0
+# 		Link Type:gui.model.link.AtomicExternalLink
+# 		Link unique Id:16
+# 		start unit Point:1
+# 		end unit Point:6
+# 		cant Expressions:1
+# 		Expr Type:gui.model.Function
+# 		Expr:UNTRANSLATED EXPRESSION
+# 		Value:1
+# 		cant Actions:0
+# 		Link Type:gui.model.link.AtomicInternalLink
+# 		Link unique Id:17
+# 		start unit Point:6
+# 		end unit Point:1
+# 		cant Expressions:0
+# 		cant Actions:0
+# 		Link Type:gui.model.link.AtomicExternalLink
+# 		Link unique Id:18
+# 		start unit Point:1
+# 		end unit Point:3
+# 		cant Expressions:1
+# 		Expr Type:gui.model.Function
+# 		Expr:UNTRANSLATED EXPRESSION
+# 		Value:1
+# 		cant Actions:2
+# 		Action:UNTRANSLATED ACTION
+# 		Action Id:19
+# 		Action:UNTRANSLATED ACTION
+# 		Action Id:20
+# 		Link Type:gui.model.link.AtomicExternalLink
+# 		Link unique Id:21
+# 		start unit Point:1
+# 		end unit Point:4
+# 		cant Expressions:1
+# 		Expr Type:gui.model.Function
+# 		Expr:UNTRANSLATED EXPRESSION
+# 		Value:1
+# 		cant Actions:2
+# 		Action:UNTRANSLATED ACTION
+# 		Action Id:22
+# 		Action:UNTRANSLATED ACTION
+# 		Action Id:23
+# 		Link Type:gui.model.link.AtomicExternalLink
+# 		Link unique Id:24
+# 		start unit Point:1
+# 		end unit Point:5
+# 		cant Expressions:1
+# 		Expr Type:gui.model.Function
+# 		Expr:UNTRANSLATED EXPRESSION
+# 		Value:1
+# 		cant Actions:2
+# 		Action:UNTRANSLATED ACTION
+# 		Action Id:25
+# 		Action:UNTRANSLATED ACTION
+# 		Action Id:26
+# 		Link Type:gui.model.link.AtomicInternalLink
+# 		Link unique Id:27
+# 		start unit Point:2
+# 		end unit Point:1
+# 		cant Expressions:0
+# 		cant Actions:0
+# 		Link Type:gui.model.link.AtomicInternalLink
+# 		Link unique Id:28
+# 		start unit Point:3
+# 		end unit Point:1
+# 		cant Expressions:0
+# 		cant Actions:0
+# 		Link Type:gui.model.link.AtomicInternalLink
+# 		Link unique Id:29
+# 		start unit Point:4
+# 		end unit Point:1
+# 		cant Expressions:1
+# 		Port Class:gui.model.port.AtomicPort
+# 		PortRef:10
+# 		Value:RawToBeSent
+# 		cant Actions:0
+# 		Link Type:gui.model.link.AtomicInternalLink
+# 		Link unique Id:30
+# 		start unit Point:5
+# 		end unit Point:1
+# 		cant Expressions:1
+# 		Port Class:gui.model.port.AtomicPort
+# 		PortRef:11
+# 		Value:FinishTobeSent
+# 		cant Actions:0
+# Initial Name:1
+# Vars cant:12
+# 	varName:CurrentRaw
+# 	varVal:50
+# 	Var UniqueId:31
+# 	varName:CurrentFinish
+# 	varVal:19
+# 	Var UniqueId:32
+# 	varName:RawToBeSent
+# 	varVal:0
+# 	Var UniqueId:33
+# 	varName:FinishTobeSent
+# 	varVal:0
+# 	Var UniqueId:34
+# 	varName:RawCapacity
+# 	varVal:80
+# 	Var UniqueId:35
+# 	varName:FinishCapacity
+# 	varVal:20
+# 	Var UniqueId:36

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://www.example.org/DEVSModeler" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <CoupledModelType xmi:id="_1nvvwSrWEeGU7IqK4hoajg" modelName="top" defined="true" sourceFileRelativePath="FactoryAdministrator.MA">
+    <ports xmi:type="CoupledPort" xmi:id="_1nvvwirWEeGU7IqK4hoajg" portName="FinishedPro1" portType="OUTPUT_PORT" incomingLinks="_1nvv2irWEeGU7IqK4hoajg"/>
+    <ports xmi:type="CoupledPort" xmi:id="_1nvvwyrWEeGU7IqK4hoajg" portName="FacWar_in1" portType="OUTPUT_PORT" incomingLinks="_1nvv2yrWEeGU7IqK4hoajg"/>
+    <ports xmi:type="CoupledPort" xmi:id="_1nvvxCrWEeGU7IqK4hoajg" portName="FacWar_in2" portType="OUTPUT_PORT" incomingLinks="_1nvv3CrWEeGU7IqK4hoajg"/>
+    <ports xmi:type="CoupledPort" xmi:id="_1nvvxSrWEeGU7IqK4hoajg" portName="Send" portType="OUTPUT_PORT" incomingLinks="_1nvv3SrWEeGU7IqK4hoajg"/>
+    <ports xmi:type="CoupledPort" xmi:id="_1nvvxirWEeGU7IqK4hoajg" portName="PMP_in" portType="OUTPUT_PORT" incomingLinks="_1nvv3irWEeGU7IqK4hoajg"/>
+    <ports xmi:type="CoupledPort" xmi:id="_1nvvxyrWEeGU7IqK4hoajg" portName="RawMaterials2" outgoingLinks="_1nvv3yrWEeGU7IqK4hoajg"/>
+    <ports xmi:type="CoupledPort" xmi:id="_1nvvyCrWEeGU7IqK4hoajg" portName="OrderInfo2" outgoingLinks="_1nvv4CrWEeGU7IqK4hoajg"/>
+    <ports xmi:type="CoupledPort" xmi:id="_1nvvySrWEeGU7IqK4hoajg" portName="Busy1" outgoingLinks="_1nvv4SrWEeGU7IqK4hoajg"/>
+    <ports xmi:type="CoupledPort" xmi:id="_1nvvyirWEeGU7IqK4hoajg" portName="PMP_out" outgoingLinks="_1nvv4irWEeGU7IqK4hoajg"/>
+    <ports xmi:type="CoupledPort" xmi:id="_1nvvyyrWEeGU7IqK4hoajg" portName="FacWar_out1" outgoingLinks="_1nvv4yrWEeGU7IqK4hoajg"/>
+    <ports xmi:type="CoupledPort" xmi:id="_1nvvzCrWEeGU7IqK4hoajg" portName="FacWar_out2" outgoingLinks="_1nvv5CrWEeGU7IqK4hoajg"/>
+    <atomicModels xmi:type="AtomicModelInstance" xmi:id="_1nvvzSrWEeGU7IqK4hoajg" instanceName="FactoryAdministrator">
+      <modelType xmi:type="CPPAtomicModelType" xmi:id="_1nvvzirWEeGU7IqK4hoajg" modelName="FactoryAdministrator" defined="true" sourceFileRelativePath="FactoryAdministrator.cpp">
+        <ports xmi:type="InputAtomicPort" xmi:id="_1nvvzyrWEeGU7IqK4hoajg" portName="RawMaterials2" incomingLinks="_1nvv3yrWEeGU7IqK4hoajg"/>
+        <ports xmi:type="InputAtomicPort" xmi:id="_1nvv0CrWEeGU7IqK4hoajg" portName="OrderInfo2" incomingLinks="_1nvv4CrWEeGU7IqK4hoajg"/>
+        <ports xmi:type="InputAtomicPort" xmi:id="_1nvv0SrWEeGU7IqK4hoajg" portName="Busy1" incomingLinks="_1nvv4SrWEeGU7IqK4hoajg"/>
+        <ports xmi:type="InputAtomicPort" xmi:id="_1nvv0irWEeGU7IqK4hoajg" portName="PMP_out" incomingLinks="_1nvv4irWEeGU7IqK4hoajg"/>
+        <ports xmi:type="InputAtomicPort" xmi:id="_1nvv0yrWEeGU7IqK4hoajg" portName="FacWar_out1" incomingLinks="_1nvv4yrWEeGU7IqK4hoajg"/>
+        <ports xmi:type="InputAtomicPort" xmi:id="_1nvv1CrWEeGU7IqK4hoajg" portName="FacWar_out2" incomingLinks="_1nvv5CrWEeGU7IqK4hoajg"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_1nvv1SrWEeGU7IqK4hoajg" portName="FacWar_in1" portType="OUTPUT_PORT" outgoingLinks="_1nvv2yrWEeGU7IqK4hoajg"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_1nvv1irWEeGU7IqK4hoajg" portName="FacWar_in2" portType="OUTPUT_PORT" outgoingLinks="_1nvv3CrWEeGU7IqK4hoajg"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_1nvv1yrWEeGU7IqK4hoajg" portName="FinishedPro1" portType="OUTPUT_PORT" outgoingLinks="_1nvv2irWEeGU7IqK4hoajg"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_1nvv2CrWEeGU7IqK4hoajg" portName="Send" portType="OUTPUT_PORT" outgoingLinks="_1nvv3SrWEeGU7IqK4hoajg"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_1nvv2SrWEeGU7IqK4hoajg" portName="PMP_in" portType="OUTPUT_PORT" outgoingLinks="_1nvv3irWEeGU7IqK4hoajg"/>
+      </modelType>
+    </atomicModels>
+    <links xmi:type="CoupledLink" xmi:id="_1nvv2irWEeGU7IqK4hoajg" target="_1nvvwirWEeGU7IqK4hoajg" source="_1nvv1yrWEeGU7IqK4hoajg"/>
+    <links xmi:type="CoupledLink" xmi:id="_1nvv2yrWEeGU7IqK4hoajg" target="_1nvvwyrWEeGU7IqK4hoajg" source="_1nvv1SrWEeGU7IqK4hoajg"/>
+    <links xmi:type="CoupledLink" xmi:id="_1nvv3CrWEeGU7IqK4hoajg" target="_1nvvxCrWEeGU7IqK4hoajg" source="_1nvv1irWEeGU7IqK4hoajg"/>
+    <links xmi:type="CoupledLink" xmi:id="_1nvv3SrWEeGU7IqK4hoajg" target="_1nvvxSrWEeGU7IqK4hoajg" source="_1nvv2CrWEeGU7IqK4hoajg"/>
+    <links xmi:type="CoupledLink" xmi:id="_1nvv3irWEeGU7IqK4hoajg" target="_1nvvxirWEeGU7IqK4hoajg" source="_1nvv2SrWEeGU7IqK4hoajg"/>
+    <links xmi:type="CoupledLink" xmi:id="_1nvv3yrWEeGU7IqK4hoajg" target="_1nvvzyrWEeGU7IqK4hoajg" source="_1nvvxyrWEeGU7IqK4hoajg"/>
+    <links xmi:type="CoupledLink" xmi:id="_1nvv4CrWEeGU7IqK4hoajg" target="_1nvv0CrWEeGU7IqK4hoajg" source="_1nvvyCrWEeGU7IqK4hoajg"/>
+    <links xmi:type="CoupledLink" xmi:id="_1nvv4SrWEeGU7IqK4hoajg" target="_1nvv0SrWEeGU7IqK4hoajg" source="_1nvvySrWEeGU7IqK4hoajg"/>
+    <links xmi:type="CoupledLink" xmi:id="_1nvv4irWEeGU7IqK4hoajg" target="_1nvv0irWEeGU7IqK4hoajg" source="_1nvvyirWEeGU7IqK4hoajg"/>
+    <links xmi:type="CoupledLink" xmi:id="_1nvv4yrWEeGU7IqK4hoajg" target="_1nvv0yrWEeGU7IqK4hoajg" source="_1nvvyyrWEeGU7IqK4hoajg"/>
+    <links xmi:type="CoupledLink" xmi:id="_1nvv5CrWEeGU7IqK4hoajg" target="_1nvv1CrWEeGU7IqK4hoajg" source="_1nvvzCrWEeGU7IqK4hoajg"/>
+  </CoupledModelType>
+  <notation:Diagram xmi:id="_1nvv5SrWEeGU7IqK4hoajg" type="DEVS" element="_1nvvwSrWEeGU7IqK4hoajg" name="FactoryAdministrator.madesigner" measurementUnit="Pixel">
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_1nvv5irWEeGU7IqK4hoajg"/>
+  </notation:Diagram>
+</xmi:XMI>

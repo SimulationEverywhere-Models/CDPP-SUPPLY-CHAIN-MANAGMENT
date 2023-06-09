@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://www.example.org/DEVSModeler" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <GGADAtomicModelType xmi:id="_c09XICrMEeGU7IqK4hoajg" defined="true" sourceFileRelativePath="blisterPackType.cdd" initialState="_c09XIyrMEeGU7IqK4hoajg">
+    <ports xmi:type="InputAtomicPort" xmi:id="_c09XISrMEeGU7IqK4hoajg" portName="Blister"/>
+    <ports xmi:type="OutputAtomicPort" xmi:id="_c09XIirMEeGU7IqK4hoajg" portName="PMP_out" portType="OUTPUT_PORT"/>
+    <states xmi:type="State" xmi:id="_c09XIyrMEeGU7IqK4hoajg" name="wait">
+      <timeAdvance xmi:type="TimeAdvance" xmi:id="_c09XJCrMEeGU7IqK4hoajg" hour="12"/>
+    </states>
+    <states xmi:type="State" xmi:id="_c09XJSrMEeGU7IqK4hoajg" name="Blistering">
+      <timeAdvance xmi:type="TimeAdvance" xmi:id="_c09XJirMEeGU7IqK4hoajg" hour="8"/>
+    </states>
+    <states xmi:type="State" xmi:id="_c09XJyrMEeGU7IqK4hoajg" name="ready">
+      <timeAdvance xmi:type="TimeAdvance" xmi:id="_c09XKCrMEeGU7IqK4hoajg"/>
+    </states>
+    <states xmi:type="State" xmi:id="_c09XKSrMEeGU7IqK4hoajg" name="InvalidInput">
+      <timeAdvance xmi:type="TimeAdvance" xmi:id="_c09XKirMEeGU7IqK4hoajg"/>
+    </states>
+    <variables xmi:type="Variable" xmi:id="_c09XKyrMEeGU7IqK4hoajg" name="Blistered">
+      <defaultValue xmi:type="Constant" xmi:id="_c09XLCrMEeGU7IqK4hoajg" value="0"/>
+    </variables>
+    <variables xmi:type="Variable" xmi:id="_c09XLSrMEeGU7IqK4hoajg" name="BlisterStat">
+      <defaultValue xmi:type="Constant" xmi:id="_c09XLirMEeGU7IqK4hoajg" value="0"/>
+    </variables>
+    <links xmi:type="ExternalTransition" xmi:id="_c09XLyrMEeGU7IqK4hoajg" target="_c09XJyrMEeGU7IqK4hoajg" source="_c09XIyrMEeGU7IqK4hoajg">
+      <condition xmi:type="Condition" xmi:id="_c09XMCrMEeGU7IqK4hoajg">
+        <expression xmi:type="AndFunction" xmi:id="_c09XMSrMEeGU7IqK4hoajg" parameters="_c09XMirMEeGU7IqK4hoajg _c09XNCrMEeGU7IqK4hoajg">
+          <containedParameters xmi:type="EqualFunction" xmi:id="_c09XMirMEeGU7IqK4hoajg" parameters="_c09XISrMEeGU7IqK4hoajg _c09XMyrMEeGU7IqK4hoajg">
+            <containedParameters xmi:type="Constant" xmi:id="_c09XMyrMEeGU7IqK4hoajg"/>
+          </containedParameters>
+          <containedParameters xmi:type="EqualFunction" xmi:id="_c09XNCrMEeGU7IqK4hoajg" parameters="_c09XLSrMEeGU7IqK4hoajg _c09XNSrMEeGU7IqK4hoajg">
+            <containedParameters xmi:type="Constant" xmi:id="_c09XNSrMEeGU7IqK4hoajg" value="0"/>
+          </containedParameters>
+        </expression>
+        <value xmi:type="Constant" xmi:id="_c09XNirMEeGU7IqK4hoajg"/>
+      </condition>
+      <actions xmi:type="Action" xmi:id="_c09XNyrMEeGU7IqK4hoajg" variable="_c09XLSrMEeGU7IqK4hoajg" expression="_c09XOCrMEeGU7IqK4hoajg">
+        <containedExpression xmi:type="Constant" xmi:id="_c09XOCrMEeGU7IqK4hoajg"/>
+      </actions>
+      <actions xmi:type="Action" xmi:id="_c09XOSrMEeGU7IqK4hoajg" variable="_c09XKyrMEeGU7IqK4hoajg" expression="_c09XOirMEeGU7IqK4hoajg">
+        <containedExpression xmi:type="Constant" xmi:id="_c09XOirMEeGU7IqK4hoajg" value="0"/>
+      </actions>
+    </links>
+    <links xmi:type="ExternalTransition" xmi:id="_c09XOyrMEeGU7IqK4hoajg" target="_c09XKSrMEeGU7IqK4hoajg" source="_c09XIyrMEeGU7IqK4hoajg">
+      <condition xmi:type="Condition" xmi:id="_c09XPCrMEeGU7IqK4hoajg">
+        <expression xmi:type="OrFunction" xmi:id="_c09XPSrMEeGU7IqK4hoajg" parameters="_c09XPirMEeGU7IqK4hoajg _c09XQCrMEeGU7IqK4hoajg">
+          <containedParameters xmi:type="NotEqualFunction" xmi:id="_c09XPirMEeGU7IqK4hoajg" parameters="_c09XISrMEeGU7IqK4hoajg _c09XPyrMEeGU7IqK4hoajg">
+            <containedParameters xmi:type="Constant" xmi:id="_c09XPyrMEeGU7IqK4hoajg"/>
+          </containedParameters>
+          <containedParameters xmi:type="EqualFunction" xmi:id="_c09XQCrMEeGU7IqK4hoajg" parameters="_c09XLSrMEeGU7IqK4hoajg _c09XQSrMEeGU7IqK4hoajg">
+            <containedParameters xmi:type="Constant" xmi:id="_c09XQSrMEeGU7IqK4hoajg"/>
+          </containedParameters>
+        </expression>
+        <value xmi:type="Constant" xmi:id="_c09XQirMEeGU7IqK4hoajg"/>
+      </condition>
+    </links>
+    <links xmi:type="InternalTransition" xmi:id="_c09XQyrMEeGU7IqK4hoajg" target="_c09XIyrMEeGU7IqK4hoajg" source="_c09XKSrMEeGU7IqK4hoajg"/>
+    <links xmi:type="InternalTransition" xmi:id="_c09XRCrMEeGU7IqK4hoajg" target="_c09XJSrMEeGU7IqK4hoajg" source="_c09XJyrMEeGU7IqK4hoajg"/>
+    <links xmi:type="InternalTransition" xmi:id="_c09XRSrMEeGU7IqK4hoajg" target="_c09XIyrMEeGU7IqK4hoajg" source="_c09XJSrMEeGU7IqK4hoajg">
+      <portValues xmi:type="PortValue" xmi:id="_c09XRirMEeGU7IqK4hoajg" port="_c09XIirMEeGU7IqK4hoajg" value="_c09XLSrMEeGU7IqK4hoajg"/>
+      <actions xmi:type="Action" xmi:id="_c09XRyrMEeGU7IqK4hoajg" variable="_c09XLSrMEeGU7IqK4hoajg" expression="_c09XSCrMEeGU7IqK4hoajg">
+        <containedExpression xmi:type="Constant" xmi:id="_c09XSCrMEeGU7IqK4hoajg" value="0"/>
+      </actions>
+      <actions xmi:type="Action" xmi:id="_c09XSSrMEeGU7IqK4hoajg" variable="_c09XKyrMEeGU7IqK4hoajg" expression="_c09XSirMEeGU7IqK4hoajg">
+        <containedExpression xmi:type="Constant" xmi:id="_c09XSirMEeGU7IqK4hoajg"/>
+      </actions>
+    </links>
+  </GGADAtomicModelType>
+  <notation:Diagram xmi:id="_c09XSyrMEeGU7IqK4hoajg" type="DEVSGGAD" element="_c09XICrMEeGU7IqK4hoajg" name="blisterPackType.ggaddesigner" measurementUnit="Pixel">
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_c09XTCrMEeGU7IqK4hoajg"/>
+  </notation:Diagram>
+</xmi:XMI>

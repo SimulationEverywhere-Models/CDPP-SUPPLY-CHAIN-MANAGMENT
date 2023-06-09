@@ -1,0 +1,17 @@
+[Top]
+in:Blister 
+out:PMP_out 
+var:Blistered BlisterStat 
+state:wait Blistering ready InvalidInput 
+initial:wait
+ext:wait ready And(Equal(Blister,1),Equal(BlisterStat,0))?1{BlisterStat=1;Blistered=0;}
+ext:wait InvalidInput Or(NotEqual(Blister,1),Equal(BlisterStat,1))?1
+int:InvalidInput wait 
+int:ready Blistering 
+int:Blistering wait PMP_out!BlisterStat {BlisterStat=0;Blistered=1;}
+wait:12:00:00:00
+Blistering:08:00:00:00
+ready:00:00:00:00
+InvalidInput:00:00:00:00
+Blistered:0
+BlisterStat:0

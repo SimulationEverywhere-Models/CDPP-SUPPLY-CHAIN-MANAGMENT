@@ -1,0 +1,24 @@
+DEVS Atomic Model
+Estados:
+invalidinput, ta=00:00:00:000
+keep, ta=06:00:00:000
+powdering, ta=02:00:00:000
+ready, ta=00:00:00:000
+wait, ta=19:00:00:000
+Estado Inicial: wait
+Port Entrada:
+pmp_in
+Port Salida:
+busy1
+press
+External transitions:
+wait->ready : GgadInputNode: GgadFunctionNode: equal( 0xa01ac58:GgadPortInNode:pmp_in  0xa01ac68:GgadConstantNode: 4 )  ? GgadConstantNode: 1 / GgadActionListNode cointaining 1 elements = { GgadSetVariableNode:powderstat= [GgadConstantNode: 1] }
+wait->invalidinput : GgadInputNode: GgadFunctionNode: notequal( 0xa01acc8:GgadPortInNode:pmp_in  0xa01acd8:GgadConstantNode: 4 )  ? GgadConstantNode: 1 / GgadNullActionNode
+Internal Transitions
+invalidinput -> invalidinput->wait : [  ] / GgadNullActionNode
+keep -> keep->wait : [ ( busy1 ! 0xa01ad98 )  ] / GgadActionListNode cointaining 1 elements = { GgadSetVariableNode:powder= [GgadConstantNode: 0] }
+powdering -> powdering->keep : [ ( press ! 0xa01ad08 )  ] / GgadActionListNode cointaining 2 elements = { GgadSetVariableNode:powder= [GgadConstantNode: 1]GgadSetVariableNode:powderstat= [GgadConstantNode: 0] }
+ready -> ready->powdering : [ ( busy1 ! 0xa01abf0 )  ] / GgadNullActionNode
+Variables
+powder=0
+powderstat=0

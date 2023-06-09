@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://www.example.org/DEVSModeler" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <GGADAtomicModelType xmi:id="_y9_OUCrNEeGU7IqK4hoajg" defined="true" sourceFileRelativePath="PowderRoomType.cdd" initialState="_y9_OVCrNEeGU7IqK4hoajg">
+    <ports xmi:type="InputAtomicPort" xmi:id="_y9_OUSrNEeGU7IqK4hoajg" portName="PMP_in"/>
+    <ports xmi:type="OutputAtomicPort" xmi:id="_y9_OUirNEeGU7IqK4hoajg" portName="Press" portType="OUTPUT_PORT"/>
+    <ports xmi:type="OutputAtomicPort" xmi:id="_y9_OUyrNEeGU7IqK4hoajg" portName="Busy1" portType="OUTPUT_PORT"/>
+    <states xmi:type="State" xmi:id="_y9_OVCrNEeGU7IqK4hoajg" name="wait">
+      <timeAdvance xmi:type="TimeAdvance" xmi:id="_y9_OVSrNEeGU7IqK4hoajg" hour="19"/>
+    </states>
+    <states xmi:type="State" xmi:id="_y9_OVirNEeGU7IqK4hoajg" name="Powdering">
+      <timeAdvance xmi:type="TimeAdvance" xmi:id="_y9_OVyrNEeGU7IqK4hoajg" hour="2"/>
+    </states>
+    <states xmi:type="State" xmi:id="_y9_OWCrNEeGU7IqK4hoajg" name="keep">
+      <timeAdvance xmi:type="TimeAdvance" xmi:id="_y9_OWSrNEeGU7IqK4hoajg" hour="6"/>
+    </states>
+    <states xmi:type="State" xmi:id="_y9_OWirNEeGU7IqK4hoajg" name="ready">
+      <timeAdvance xmi:type="TimeAdvance" xmi:id="_y9_OWyrNEeGU7IqK4hoajg"/>
+    </states>
+    <states xmi:type="State" xmi:id="_y9_OXCrNEeGU7IqK4hoajg" name="InvalidInput">
+      <timeAdvance xmi:type="TimeAdvance" xmi:id="_y9_OXSrNEeGU7IqK4hoajg"/>
+    </states>
+    <variables xmi:type="Variable" xmi:id="_y9_OXirNEeGU7IqK4hoajg" name="Powder">
+      <defaultValue xmi:type="Constant" xmi:id="_y9_OXyrNEeGU7IqK4hoajg" value="0"/>
+    </variables>
+    <variables xmi:type="Variable" xmi:id="_y9_OYCrNEeGU7IqK4hoajg" name="PowderStat">
+      <defaultValue xmi:type="Constant" xmi:id="_y9_OYSrNEeGU7IqK4hoajg" value="0"/>
+    </variables>
+    <links xmi:type="ExternalTransition" xmi:id="_y9_OYirNEeGU7IqK4hoajg" target="_y9_OWirNEeGU7IqK4hoajg" source="_y9_OVCrNEeGU7IqK4hoajg">
+      <condition xmi:type="Condition" xmi:id="_y9_OYyrNEeGU7IqK4hoajg">
+        <expression xmi:type="EqualFunction" xmi:id="_y9_OZCrNEeGU7IqK4hoajg" parameters="_y9_OUSrNEeGU7IqK4hoajg _y9_OZSrNEeGU7IqK4hoajg">
+          <containedParameters xmi:type="Constant" xmi:id="_y9_OZSrNEeGU7IqK4hoajg" value="4"/>
+        </expression>
+        <value xmi:type="Constant" xmi:id="_y9_OZirNEeGU7IqK4hoajg"/>
+      </condition>
+      <actions xmi:type="Action" xmi:id="_y9_OZyrNEeGU7IqK4hoajg" variable="_y9_OYCrNEeGU7IqK4hoajg" expression="_y9_OaCrNEeGU7IqK4hoajg">
+        <containedExpression xmi:type="Constant" xmi:id="_y9_OaCrNEeGU7IqK4hoajg"/>
+      </actions>
+    </links>
+    <links xmi:type="ExternalTransition" xmi:id="_y9_OaSrNEeGU7IqK4hoajg" target="_y9_OXCrNEeGU7IqK4hoajg" source="_y9_OVCrNEeGU7IqK4hoajg">
+      <condition xmi:type="Condition" xmi:id="_y9_OairNEeGU7IqK4hoajg">
+        <expression xmi:type="NotEqualFunction" xmi:id="_y9_OayrNEeGU7IqK4hoajg" parameters="_y9_OUSrNEeGU7IqK4hoajg _y9_ObCrNEeGU7IqK4hoajg">
+          <containedParameters xmi:type="Constant" xmi:id="_y9_ObCrNEeGU7IqK4hoajg" value="4"/>
+        </expression>
+        <value xmi:type="Constant" xmi:id="_y9_ObSrNEeGU7IqK4hoajg"/>
+      </condition>
+    </links>
+    <links xmi:type="InternalTransition" xmi:id="_y9_ObirNEeGU7IqK4hoajg" target="_y9_OVCrNEeGU7IqK4hoajg" source="_y9_OXCrNEeGU7IqK4hoajg"/>
+    <links xmi:type="InternalTransition" xmi:id="_y9_ObyrNEeGU7IqK4hoajg" target="_y9_OVirNEeGU7IqK4hoajg" source="_y9_OWirNEeGU7IqK4hoajg">
+      <portValues xmi:type="PortValue" xmi:id="_y9_OcCrNEeGU7IqK4hoajg" port="_y9_OUyrNEeGU7IqK4hoajg" value="_y9_OYCrNEeGU7IqK4hoajg"/>
+    </links>
+    <links xmi:type="InternalTransition" xmi:id="_y9_OcSrNEeGU7IqK4hoajg" target="_y9_OWCrNEeGU7IqK4hoajg" source="_y9_OVirNEeGU7IqK4hoajg">
+      <portValues xmi:type="PortValue" xmi:id="_y9_OcirNEeGU7IqK4hoajg" port="_y9_OUirNEeGU7IqK4hoajg" value="_y9_OYCrNEeGU7IqK4hoajg"/>
+      <actions xmi:type="Action" xmi:id="_y9_OcyrNEeGU7IqK4hoajg" variable="_y9_OXirNEeGU7IqK4hoajg" expression="_y9_OdCrNEeGU7IqK4hoajg">
+        <containedExpression xmi:type="Constant" xmi:id="_y9_OdCrNEeGU7IqK4hoajg"/>
+      </actions>
+      <actions xmi:type="Action" xmi:id="_y9_OdSrNEeGU7IqK4hoajg" variable="_y9_OYCrNEeGU7IqK4hoajg" expression="_y9_OdirNEeGU7IqK4hoajg">
+        <containedExpression xmi:type="Constant" xmi:id="_y9_OdirNEeGU7IqK4hoajg" value="0"/>
+      </actions>
+    </links>
+    <links xmi:type="InternalTransition" xmi:id="_y9_OdyrNEeGU7IqK4hoajg" target="_y9_OVCrNEeGU7IqK4hoajg" source="_y9_OWCrNEeGU7IqK4hoajg">
+      <portValues xmi:type="PortValue" xmi:id="_y9_OeCrNEeGU7IqK4hoajg" port="_y9_OUyrNEeGU7IqK4hoajg" value="_y9_OYCrNEeGU7IqK4hoajg"/>
+      <actions xmi:type="Action" xmi:id="_y9_OeSrNEeGU7IqK4hoajg" variable="_y9_OXirNEeGU7IqK4hoajg" expression="_y9_OeirNEeGU7IqK4hoajg">
+        <containedExpression xmi:type="Constant" xmi:id="_y9_OeirNEeGU7IqK4hoajg" value="0"/>
+      </actions>
+    </links>
+  </GGADAtomicModelType>
+  <notation:Diagram xmi:id="_y9_OeyrNEeGU7IqK4hoajg" type="DEVSGGAD" element="_y9_OUCrNEeGU7IqK4hoajg" name="PowderRoomType.ggaddesigner" measurementUnit="Pixel">
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_y9_OfCrNEeGU7IqK4hoajg"/>
+  </notation:Diagram>
+</xmi:XMI>

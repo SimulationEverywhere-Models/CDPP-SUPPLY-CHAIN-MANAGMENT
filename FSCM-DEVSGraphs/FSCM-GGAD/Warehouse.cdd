@@ -1,0 +1,30 @@
+[Top]
+in:FacWar_in1 FacWar_in2 Send 
+out:FacWar_out1 FacWar_out2 
+var:CurrentRaw CurrentFinish RawToBeSent FinishTobeSent RawCapacity FinishCapacity 
+state:active RawReceived FinishedReceived SendRaw SendFinished Invalidinput 
+initial:active
+ext:active RawReceived Between(FacWar_in1,100,180)?1{CurrentRaw=Compare(Minus(Add(FacWar_in1,CurrentRaw),100),RawCapacity,RawCapacity,RawCapacity,Minus(Add(FacWar_in1,CurrentRaw),100));}
+ext:active Invalidinput And(Less(FacWar_in1,100),Greater(FacWar_in1,180))?1
+ext:active Invalidinput And(Less(FacWar_in2,180),Greater(FacWar_in2,200))?1
+ext:active Invalidinput Greater(Send,201)?1
+int:Invalidinput active 
+ext:active FinishedReceived Between(FacWar_in2,180,200)?1{FinishTobeSent=Compare(CurrentFinish,Minus(Send,180),CurrentFinish,CurrentFinish,Minus(Send,180));CurrentFinish=Minus(CurrentFinish,FinishTobeSent);}
+ext:active SendRaw And(Greater(Send,100),Less(Send,180))?1{RawToBeSent=Compare(CurrentRaw,Minus(Send,100),CurrentRaw,CurrentRaw,Minus(Send,100));CurrentRaw=Minus(CurrentRaw,RawToBeSent);}
+ext:active SendFinished And(Greater(Send,181),Less(Send,200))?1{FinishTobeSent=Compare(CurrentFinish,Minus(Send,180),CurrentFinish,CurrentFinish,Minus(Send,180));CurrentFinish=Minus(CurrentFinish,FinishTobeSent);}
+int:RawReceived active 
+int:FinishedReceived active 
+int:SendRaw active FacWar_out1!RawToBeSent 
+int:SendFinished active FacWar_out2!FinishTobeSent 
+active:22:00:00:00
+RawReceived:00:00:00:00
+FinishedReceived:00:00:00:00
+SendRaw:00:00:00:00
+SendFinished:00:00:00:00
+Invalidinput:00:00:00:00
+CurrentRaw:50
+CurrentFinish:19
+RawToBeSent:0
+FinishTobeSent:0
+RawCapacity:80
+FinishCapacity:20

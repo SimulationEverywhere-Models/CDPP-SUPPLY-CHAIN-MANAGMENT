@@ -1,0 +1,96 @@
+# Filename:PressRoom.gam
+# export classpath:PressRoom.cdd
+# Title:Top
+# background:
+# cant units:4
+# 	Unit class:gui.model.unit.AtomicUnit
+# 	Unique ID:22
+# 	location x:125
+# 	location y:320
+# 	name:wait
+# 	Atomic TL:16:00:00:00
+# 	Unit class:gui.model.unit.AtomicUnit
+# 	Unique ID:23
+# 	location x:40
+# 	location y:180
+# 	name:Pressing
+# 	Atomic TL:04:00:00:00
+# 	Unit class:gui.model.unit.AtomicUnit
+# 	Unique ID:24
+# 	location x:125
+# 	location y:40
+# 	name:ready
+# 	Atomic TL:00:00:00:00
+# 	Unit class:gui.model.unit.AtomicUnit
+# 	Unique ID:25
+# 	location x:211
+# 	location y:180
+# 	name:InvalidInput
+# 	Atomic TL:00:00:00:00
+# Cant Ports:2
+# 	Port Class:gui.model.port.AtomicPort
+# 	Port UniqueId:26
+# 	Port ID:Press
+# 	Port In/Out:In
+# 	Port Type:Integer
+# 	Port Class:gui.model.port.AtomicPort
+# 	Port UniqueId:27
+# 	Port ID:BlilsterPack
+# 	Port In/Out:Out
+# 	Port Type:Integer
+# Cant Links:5
+# 		Link Type:gui.model.link.AtomicExternalLink
+# 		Link unique Id:28
+# 		start unit Point:22
+# 		end unit Point:24
+# 		cant Expressions:1
+# 		Expr Type:gui.model.Function
+# 		Expr:UNTRANSLATED EXPRESSION
+# 		Value:1
+# 		cant Actions:2
+# 		Action:UNTRANSLATED ACTION
+# 		Action Id:29
+# 		Action:UNTRANSLATED ACTION
+# 		Action Id:30
+# 		Link Type:gui.model.link.AtomicExternalLink
+# 		Link unique Id:31
+# 		start unit Point:22
+# 		end unit Point:25
+# 		cant Expressions:1
+# 		Expr Type:gui.model.Function
+# 		Expr:UNTRANSLATED EXPRESSION
+# 		Value:1
+# 		cant Actions:0
+# 		Link Type:gui.model.link.AtomicInternalLink
+# 		Link unique Id:32
+# 		start unit Point:25
+# 		end unit Point:22
+# 		cant Expressions:0
+# 		cant Actions:0
+# 		Link Type:gui.model.link.AtomicInternalLink
+# 		Link unique Id:33
+# 		start unit Point:24
+# 		end unit Point:23
+# 		cant Expressions:0
+# 		cant Actions:0
+# 		Link Type:gui.model.link.AtomicInternalLink
+# 		Link unique Id:34
+# 		start unit Point:23
+# 		end unit Point:22
+# 		cant Expressions:1
+# 		Port Class:gui.model.port.AtomicPort
+# 		PortRef:27
+# 		Value:PressStat
+# 		cant Actions:2
+# 		Action:UNTRANSLATED ACTION
+# 		Action Id:35
+# 		Action:UNTRANSLATED ACTION
+# 		Action Id:36
+# Initial Name:22
+# Vars cant:5
+# 	varName:Pressed
+# 	varVal:0
+# 	Var UniqueId:37
+# 	varName:PressStat
+# 	varVal:0
+# 	Var UniqueId:38

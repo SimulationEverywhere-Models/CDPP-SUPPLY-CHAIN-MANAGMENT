@@ -1,0 +1,19 @@
+[Top]
+in:PMP_in 
+out:Press Busy1 
+var:Powder PowderStat 
+state:wait Powdering keep ready InvalidInput 
+initial:wait
+ext:wait ready Equal(PMP_in,4)?1{PowderStat=1;}
+ext:wait InvalidInput NotEqual(PMP_in,4)?1
+int:InvalidInput wait 
+int:ready Powdering Busy1!PowderStat 
+int:Powdering keep Press!PowderStat {Powder=1;PowderStat=0;}
+int:keep wait Busy1!PowderStat {Powder=0;}
+wait:19:00:00:00
+Powdering:02:00:00:00
+keep:06:00:00:00
+ready:00:00:00:00
+InvalidInput:00:00:00:00
+Powder:0
+PowderStat:0

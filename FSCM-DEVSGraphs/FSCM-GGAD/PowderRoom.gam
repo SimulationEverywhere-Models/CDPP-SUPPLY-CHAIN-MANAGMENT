@@ -1,0 +1,119 @@
+# Filename:PowderRoom.gam
+# export classpath:PowderRoom.cdd
+# Title:Top
+# background:
+# cant units:5
+# 	Unit class:gui.model.unit.AtomicUnit
+# 	Unique ID:1
+# 	location x:1
+# 	location y:1
+# 	name:wait
+# 	Atomic TL:19:00:00:00
+# 	Unit class:gui.model.unit.AtomicUnit
+# 	Unique ID:2
+# 	location x:1
+# 	location y:1
+# 	name:Powdering
+# 	Atomic TL:02:00:00:00
+# 	Unit class:gui.model.unit.AtomicUnit
+# 	Unique ID:3
+# 	location x:1
+# 	location y:1
+# 	name:keep
+# 	Atomic TL:06:00:00:00
+# 	Unit class:gui.model.unit.AtomicUnit
+# 	Unique ID:4
+# 	location x:1
+# 	location y:1
+# 	name:ready
+# 	Atomic TL:00:00:00:00
+# 	Unit class:gui.model.unit.AtomicUnit
+# 	Unique ID:5
+# 	location x:1
+# 	location y:1
+# 	name:InvalidInput
+# 	Atomic TL:00:00:00:00
+# Cant Ports:3
+# 	Port Class:gui.model.port.AtomicPort
+# 	Port UniqueId:6
+# 	Port ID:PMP_in
+# 	Port In/Out:In
+# 	Port Type:Integer
+# 	Port Class:gui.model.port.AtomicPort
+# 	Port UniqueId:7
+# 	Port ID:Press
+# 	Port In/Out:Out
+# 	Port Type:Integer
+# 	Port Class:gui.model.port.AtomicPort
+# 	Port UniqueId:8
+# 	Port ID:Busy1
+# 	Port In/Out:Out
+# 	Port Type:Integer
+# Cant Links:6
+# 		Link Type:gui.model.link.AtomicExternalLink
+# 		Link unique Id:9
+# 		start unit Point:1
+# 		end unit Point:4
+# 		cant Expressions:1
+# 		Expr Type:gui.model.Function
+# 		Expr:UNTRANSLATED EXPRESSION
+# 		Value:1
+# 		cant Actions:1
+# 		Action:UNTRANSLATED ACTION
+# 		Action Id:10
+# 		Link Type:gui.model.link.AtomicExternalLink
+# 		Link unique Id:11
+# 		start unit Point:1
+# 		end unit Point:5
+# 		cant Expressions:1
+# 		Expr Type:gui.model.Function
+# 		Expr:UNTRANSLATED EXPRESSION
+# 		Value:1
+# 		cant Actions:0
+# 		Link Type:gui.model.link.AtomicInternalLink
+# 		Link unique Id:12
+# 		start unit Point:5
+# 		end unit Point:1
+# 		cant Expressions:0
+# 		cant Actions:0
+# 		Link Type:gui.model.link.AtomicInternalLink
+# 		Link unique Id:13
+# 		start unit Point:4
+# 		end unit Point:2
+# 		cant Expressions:1
+# 		Port Class:gui.model.port.AtomicPort
+# 		PortRef:8
+# 		Value:PowderStat
+# 		cant Actions:0
+# 		Link Type:gui.model.link.AtomicInternalLink
+# 		Link unique Id:14
+# 		start unit Point:2
+# 		end unit Point:3
+# 		cant Expressions:1
+# 		Port Class:gui.model.port.AtomicPort
+# 		PortRef:7
+# 		Value:PowderStat
+# 		cant Actions:2
+# 		Action:UNTRANSLATED ACTION
+# 		Action Id:15
+# 		Action:UNTRANSLATED ACTION
+# 		Action Id:16
+# 		Link Type:gui.model.link.AtomicInternalLink
+# 		Link unique Id:17
+# 		start unit Point:3
+# 		end unit Point:1
+# 		cant Expressions:1
+# 		Port Class:gui.model.port.AtomicPort
+# 		PortRef:8
+# 		Value:PowderStat
+# 		cant Actions:1
+# 		Action:UNTRANSLATED ACTION
+# 		Action Id:18
+# Initial Name:1
+# Vars cant:6
+# 	varName:Powder
+# 	varVal:0
+# 	Var UniqueId:19
+# 	varName:PowderStat
+# 	varVal:0
+# 	Var UniqueId:20

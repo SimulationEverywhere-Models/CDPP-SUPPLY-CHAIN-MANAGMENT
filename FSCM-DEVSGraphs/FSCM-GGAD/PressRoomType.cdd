@@ -1,0 +1,17 @@
+[Top]
+in:Press 
+out:BlilsterPack 
+var:Pressed PressStat 
+state:wait Pressing ready InvalidInput 
+initial:wait
+ext:wait ready And(Equal(Press,1),Equal(PressStat,0))?1{PressStat=1;Pressed=0;}
+ext:wait InvalidInput Or(NotEqual(Press,1),Equal(PressStat,1))?1
+int:InvalidInput wait 
+int:ready Pressing 
+int:Pressing wait BlilsterPack!PressStat {PressStat=0;Pressed=1;}
+wait:16:00:00:00
+Pressing:04:00:00:00
+ready:00:00:00:00
+InvalidInput:00:00:00:00
+Pressed:0
+PressStat:0

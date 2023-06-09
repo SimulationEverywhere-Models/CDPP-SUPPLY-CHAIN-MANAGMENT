@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://www.example.org/DEVSModeler" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <CoupledModelType xmi:id="_-P9ysCrqEeGU7IqK4hoajg" defined="true" sourceFileRelativePath="FSCM.ma">
+    <ports xmi:type="CoupledPort" xmi:id="_-P9ysSrqEeGU7IqK4hoajg" portName="out" portType="OUTPUT_PORT" incomingLinks="_-P-Z8SrqEeGU7IqK4hoajg"/>
+    <ports xmi:type="CoupledPort" xmi:id="_-P9ysirqEeGU7IqK4hoajg" portName="PMP_in" portType="OUTPUT_PORT" incomingLinks="_-P-Z4yrqEeGU7IqK4hoajg"/>
+    <ports xmi:type="CoupledPort" xmi:id="_-P9ysyrqEeGU7IqK4hoajg" portName="FacWar_in2" portType="OUTPUT_PORT" incomingLinks="_-P-Z6SrqEeGU7IqK4hoajg"/>
+    <ports xmi:type="CoupledPort" xmi:id="_-P9ytCrqEeGU7IqK4hoajg" portName="FacWar_in1" portType="OUTPUT_PORT" incomingLinks="_-P-Z6irqEeGU7IqK4hoajg"/>
+    <ports xmi:type="CoupledPort" xmi:id="_-P9ytSrqEeGU7IqK4hoajg" portName="Send" portType="OUTPUT_PORT" incomingLinks="_-P-Z7CrqEeGU7IqK4hoajg"/>
+    <ports xmi:type="CoupledPort" xmi:id="_-P9ytirqEeGU7IqK4hoajg" portName="FacWar_out1" portType="OUTPUT_PORT" incomingLinks="_-P-Z7yrqEeGU7IqK4hoajg"/>
+    <ports xmi:type="CoupledPort" xmi:id="_-P9ytyrqEeGU7IqK4hoajg" portName="FacWar_out2" portType="OUTPUT_PORT" incomingLinks="_-P-Z8CrqEeGU7IqK4hoajg"/>
+    <ports xmi:type="CoupledPort" xmi:id="_-P9yuCrqEeGU7IqK4hoajg" portName="OrderInfo2" outgoingLinks="_-P-Z5SrqEeGU7IqK4hoajg"/>
+    <ports xmi:type="CoupledPort" xmi:id="_-P9yuSrqEeGU7IqK4hoajg" portName="RawMaterials2" outgoingLinks="_-P-Z5irqEeGU7IqK4hoajg"/>
+    <coupledModels xmi:type="CoupledModelInstance" xmi:id="_-P9yuirqEeGU7IqK4hoajg" instanceName="FactoryWarehouse">
+      <modelType xmi:type="CoupledModelType" xmi:id="_-P9yuyrqEeGU7IqK4hoajg" modelName="FactoryWarehouse">
+        <ports xmi:type="CoupledPort" xmi:id="_-P9yvCrqEeGU7IqK4hoajg" portName="FacWar_out1" portType="OUTPUT_PORT" incomingLinks="_-P9yyirqEeGU7IqK4hoajg" outgoingLinks="_-P-Z7SrqEeGU7IqK4hoajg _-P-Z7yrqEeGU7IqK4hoajg"/>
+        <ports xmi:type="CoupledPort" xmi:id="_-P9yvSrqEeGU7IqK4hoajg" portName="FacWar_out2" portType="OUTPUT_PORT" incomingLinks="_-P9yySrqEeGU7IqK4hoajg" outgoingLinks="_-P-Z7irqEeGU7IqK4hoajg _-P-Z8CrqEeGU7IqK4hoajg"/>
+        <ports xmi:type="CoupledPort" xmi:id="_-P9yvirqEeGU7IqK4hoajg" portName="FacWar_in1" incomingLinks="_-P-Z6CrqEeGU7IqK4hoajg" outgoingLinks="_-P9yyyrqEeGU7IqK4hoajg"/>
+        <ports xmi:type="CoupledPort" xmi:id="_-P9yvyrqEeGU7IqK4hoajg" portName="FacWar_in2" incomingLinks="_-P-Z5yrqEeGU7IqK4hoajg" outgoingLinks="_-P9yzCrqEeGU7IqK4hoajg"/>
+        <ports xmi:type="CoupledPort" xmi:id="_-P9ywCrqEeGU7IqK4hoajg" portName="Send" incomingLinks="_-P-Z6yrqEeGU7IqK4hoajg" outgoingLinks="_-P9yzSrqEeGU7IqK4hoajg"/>
+        <atomicModels xmi:type="AtomicModelInstance" xmi:id="_-P9ywSrqEeGU7IqK4hoajg" instanceName="Warehouse">
+          <modelType xmi:type="GGADAtomicModelType" xmi:id="_-P9ywirqEeGU7IqK4hoajg" defined="true" sourceFileRelativePath="Warehouse.cdd">
+            <ports xmi:type="InputAtomicPort" xmi:id="_-P9ywyrqEeGU7IqK4hoajg" portName="FacWar_in1" incomingLinks="_-P9yyyrqEeGU7IqK4hoajg"/>
+            <ports xmi:type="InputAtomicPort" xmi:id="_-P9yxCrqEeGU7IqK4hoajg" portName="FacWar_in2" incomingLinks="_-P9yzCrqEeGU7IqK4hoajg"/>
+            <ports xmi:type="InputAtomicPort" xmi:id="_-P9yxSrqEeGU7IqK4hoajg" portName="Send" incomingLinks="_-P9yzSrqEeGU7IqK4hoajg"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_-P9yxirqEeGU7IqK4hoajg" portName="FacWar_out1" portType="OUTPUT_PORT" outgoingLinks="_-P9yyirqEeGU7IqK4hoajg"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_-P9yxyrqEeGU7IqK4hoajg" portName="FacWar_out2" portType="OUTPUT_PORT" outgoingLinks="_-P9yySrqEeGU7IqK4hoajg"/>
+          </modelType>
+          <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_-P9yyCrqEeGU7IqK4hoajg" name="source" value="Warehouse.cdd"/>
+        </atomicModels>
+        <links xmi:type="CoupledLink" xmi:id="_-P9yySrqEeGU7IqK4hoajg" target="_-P9yvSrqEeGU7IqK4hoajg" source="_-P9yxyrqEeGU7IqK4hoajg"/>
+        <links xmi:type="CoupledLink" xmi:id="_-P9yyirqEeGU7IqK4hoajg" target="_-P9yvCrqEeGU7IqK4hoajg" source="_-P9yxirqEeGU7IqK4hoajg"/>
+        <links xmi:type="CoupledLink" xmi:id="_-P9yyyrqEeGU7IqK4hoajg" target="_-P9ywyrqEeGU7IqK4hoajg" source="_-P9yvirqEeGU7IqK4hoajg"/>
+        <links xmi:type="CoupledLink" xmi:id="_-P9yzCrqEeGU7IqK4hoajg" target="_-P9yxCrqEeGU7IqK4hoajg" source="_-P9yvyrqEeGU7IqK4hoajg"/>
+        <links xmi:type="CoupledLink" xmi:id="_-P9yzSrqEeGU7IqK4hoajg" target="_-P9yxSrqEeGU7IqK4hoajg" source="_-P9ywCrqEeGU7IqK4hoajg"/>
+      </modelType>
+    </coupledModels>
+    <coupledModels xmi:type="CoupledModelInstance" xmi:id="_-P9yzirqEeGU7IqK4hoajg" instanceName="PMP">
+      <modelType xmi:type="CoupledModelType" xmi:id="_-P9yzyrqEeGU7IqK4hoajg" modelName="PMP">
+        <ports xmi:type="CoupledPort" xmi:id="_-P9y0CrqEeGU7IqK4hoajg" portName="out" portType="OUTPUT_PORT" incomingLinks="_-P-Z0yrqEeGU7IqK4hoajg" outgoingLinks="_-P-Z4SrqEeGU7IqK4hoajg"/>
+        <ports xmi:type="CoupledPort" xmi:id="_-P9y0SrqEeGU7IqK4hoajg" portName="Busy" portType="OUTPUT_PORT" incomingLinks="_-P-Z0SrqEeGU7IqK4hoajg" outgoingLinks="_-P-Z5CrqEeGU7IqK4hoajg"/>
+        <ports xmi:type="CoupledPort" xmi:id="_-P9y0irqEeGU7IqK4hoajg" portName="in" incomingLinks="_-P-Z4irqEeGU7IqK4hoajg" outgoingLinks="_-P-ZzyrqEeGU7IqK4hoajg"/>
+        <atomicModels xmi:type="AtomicModelInstance" xmi:id="_-P9y0yrqEeGU7IqK4hoajg" instanceName="PressRoom">
+          <modelType xmi:type="GGADAtomicModelType" xmi:id="_-P-ZwCrqEeGU7IqK4hoajg" defined="true" sourceFileRelativePath="PressRoomType.cdd">
+            <ports xmi:type="InputAtomicPort" xmi:id="_-P-ZwSrqEeGU7IqK4hoajg" portName="Press" incomingLinks="_-P-Z0CrqEeGU7IqK4hoajg"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_-P-ZwirqEeGU7IqK4hoajg" portName="BlilsterPack" portType="OUTPUT_PORT" outgoingLinks="_-P-Z0irqEeGU7IqK4hoajg"/>
+          </modelType>
+          <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_-P-ZwyrqEeGU7IqK4hoajg" name="source" value="PressRoomType.cdd"/>
+        </atomicModels>
+        <atomicModels xmi:type="AtomicModelInstance" xmi:id="_-P-ZxCrqEeGU7IqK4hoajg" instanceName="BlisterPack">
+          <modelType xmi:type="GGADAtomicModelType" xmi:id="_-P-ZxSrqEeGU7IqK4hoajg" defined="true" sourceFileRelativePath="blisterPackType.cdd">
+            <ports xmi:type="InputAtomicPort" xmi:id="_-P-ZxirqEeGU7IqK4hoajg" portName="Blister" incomingLinks="_-P-Z0irqEeGU7IqK4hoajg"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_-P-ZxyrqEeGU7IqK4hoajg" portName="PMP_out" portType="OUTPUT_PORT" outgoingLinks="_-P-Z0yrqEeGU7IqK4hoajg"/>
+          </modelType>
+          <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_-P-ZyCrqEeGU7IqK4hoajg" name="source" value="blisterPackType.cdd"/>
+        </atomicModels>
+        <atomicModels xmi:type="AtomicModelInstance" xmi:id="_-P-ZySrqEeGU7IqK4hoajg" instanceName="PowderRoom">
+          <modelType xmi:type="GGADAtomicModelType" xmi:id="_-P-ZyirqEeGU7IqK4hoajg" defined="true" sourceFileRelativePath="PowderRoomType.cdd">
+            <ports xmi:type="InputAtomicPort" xmi:id="_-P-ZyyrqEeGU7IqK4hoajg" portName="PMP_in" incomingLinks="_-P-ZzyrqEeGU7IqK4hoajg"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_-P-ZzCrqEeGU7IqK4hoajg" portName="Press" portType="OUTPUT_PORT" outgoingLinks="_-P-Z0CrqEeGU7IqK4hoajg"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_-P-ZzSrqEeGU7IqK4hoajg" portName="Busy1" portType="OUTPUT_PORT" outgoingLinks="_-P-Z0SrqEeGU7IqK4hoajg"/>
+          </modelType>
+          <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_-P-ZzirqEeGU7IqK4hoajg" name="source" value="PowderRoomType.cdd"/>
+        </atomicModels>
+        <links xmi:type="CoupledLink" xmi:id="_-P-ZzyrqEeGU7IqK4hoajg" target="_-P-ZyyrqEeGU7IqK4hoajg" source="_-P9y0irqEeGU7IqK4hoajg"/>
+        <links xmi:type="CoupledLink" xmi:id="_-P-Z0CrqEeGU7IqK4hoajg" target="_-P-ZwSrqEeGU7IqK4hoajg" source="_-P-ZzCrqEeGU7IqK4hoajg"/>
+        <links xmi:type="CoupledLink" xmi:id="_-P-Z0SrqEeGU7IqK4hoajg" target="_-P9y0SrqEeGU7IqK4hoajg" source="_-P-ZzSrqEeGU7IqK4hoajg"/>
+        <links xmi:type="CoupledLink" xmi:id="_-P-Z0irqEeGU7IqK4hoajg" target="_-P-ZxirqEeGU7IqK4hoajg" source="_-P-ZwirqEeGU7IqK4hoajg"/>
+        <links xmi:type="CoupledLink" xmi:id="_-P-Z0yrqEeGU7IqK4hoajg" target="_-P9y0CrqEeGU7IqK4hoajg" source="_-P-ZxyrqEeGU7IqK4hoajg"/>
+      </modelType>
+    </coupledModels>
+    <atomicModels xmi:type="AtomicModelInstance" xmi:id="_-P-Z1CrqEeGU7IqK4hoajg" instanceName="FactoryAdministrator">
+      <modelType xmi:type="CPPAtomicModelType" xmi:id="_-P-Z1SrqEeGU7IqK4hoajg" modelName="FactoryAdministrator" defined="true" sourceFileRelativePath="FactoryAdministrator.cpp">
+        <ports xmi:type="InputAtomicPort" xmi:id="_-P-Z1irqEeGU7IqK4hoajg" portName="RawMaterials2" incomingLinks="_-P-Z5irqEeGU7IqK4hoajg"/>
+        <ports xmi:type="InputAtomicPort" xmi:id="_-P-Z1yrqEeGU7IqK4hoajg" portName="OrderInfo2" incomingLinks="_-P-Z5SrqEeGU7IqK4hoajg"/>
+        <ports xmi:type="InputAtomicPort" xmi:id="_-P-Z2CrqEeGU7IqK4hoajg" portName="Busy1" incomingLinks="_-P-Z5CrqEeGU7IqK4hoajg"/>
+        <ports xmi:type="InputAtomicPort" xmi:id="_-P-Z2SrqEeGU7IqK4hoajg" portName="PMP_out" incomingLinks="_-P-Z4SrqEeGU7IqK4hoajg"/>
+        <ports xmi:type="InputAtomicPort" xmi:id="_-P-Z2irqEeGU7IqK4hoajg" portName="FacWar_out1" incomingLinks="_-P-Z7SrqEeGU7IqK4hoajg"/>
+        <ports xmi:type="InputAtomicPort" xmi:id="_-P-Z2yrqEeGU7IqK4hoajg" portName="FacWar_out2" incomingLinks="_-P-Z7irqEeGU7IqK4hoajg"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_-P-Z3CrqEeGU7IqK4hoajg" portName="FacWar_in1" portType="OUTPUT_PORT" outgoingLinks="_-P-Z6CrqEeGU7IqK4hoajg _-P-Z6irqEeGU7IqK4hoajg"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_-P-Z3SrqEeGU7IqK4hoajg" portName="FacWar_in2" portType="OUTPUT_PORT" outgoingLinks="_-P-Z5yrqEeGU7IqK4hoajg _-P-Z6SrqEeGU7IqK4hoajg"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_-P-Z3irqEeGU7IqK4hoajg" portName="FinishedPro1" portType="OUTPUT_PORT" outgoingLinks="_-P-Z8SrqEeGU7IqK4hoajg"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_-P-Z3yrqEeGU7IqK4hoajg" portName="Send" portType="OUTPUT_PORT" outgoingLinks="_-P-Z6yrqEeGU7IqK4hoajg _-P-Z7CrqEeGU7IqK4hoajg"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_-P-Z4CrqEeGU7IqK4hoajg" portName="PMP_in" portType="OUTPUT_PORT" outgoingLinks="_-P-Z4irqEeGU7IqK4hoajg _-P-Z4yrqEeGU7IqK4hoajg"/>
+      </modelType>
+    </atomicModels>
+    <links xmi:type="CoupledLink" xmi:id="_-P-Z4SrqEeGU7IqK4hoajg" target="_-P-Z2SrqEeGU7IqK4hoajg" source="_-P9y0CrqEeGU7IqK4hoajg"/>
+    <links xmi:type="CoupledLink" xmi:id="_-P-Z4irqEeGU7IqK4hoajg" target="_-P9y0irqEeGU7IqK4hoajg" source="_-P-Z4CrqEeGU7IqK4hoajg"/>
+    <links xmi:type="CoupledLink" xmi:id="_-P-Z4yrqEeGU7IqK4hoajg" target="_-P9ysirqEeGU7IqK4hoajg" source="_-P-Z4CrqEeGU7IqK4hoajg"/>
+    <links xmi:type="CoupledLink" xmi:id="_-P-Z5CrqEeGU7IqK4hoajg" target="_-P-Z2CrqEeGU7IqK4hoajg" source="_-P9y0SrqEeGU7IqK4hoajg"/>
+    <links xmi:type="CoupledLink" xmi:id="_-P-Z5SrqEeGU7IqK4hoajg" target="_-P-Z1yrqEeGU7IqK4hoajg" source="_-P9yuCrqEeGU7IqK4hoajg"/>
+    <links xmi:type="CoupledLink" xmi:id="_-P-Z5irqEeGU7IqK4hoajg" target="_-P-Z1irqEeGU7IqK4hoajg" source="_-P9yuSrqEeGU7IqK4hoajg"/>
+    <links xmi:type="CoupledLink" xmi:id="_-P-Z5yrqEeGU7IqK4hoajg" target="_-P9yvyrqEeGU7IqK4hoajg" source="_-P-Z3SrqEeGU7IqK4hoajg"/>
+    <links xmi:type="CoupledLink" xmi:id="_-P-Z6CrqEeGU7IqK4hoajg" target="_-P9yvirqEeGU7IqK4hoajg" source="_-P-Z3CrqEeGU7IqK4hoajg"/>
+    <links xmi:type="CoupledLink" xmi:id="_-P-Z6SrqEeGU7IqK4hoajg" target="_-P9ysyrqEeGU7IqK4hoajg" source="_-P-Z3SrqEeGU7IqK4hoajg"/>
+    <links xmi:type="CoupledLink" xmi:id="_-P-Z6irqEeGU7IqK4hoajg" target="_-P9ytCrqEeGU7IqK4hoajg" source="_-P-Z3CrqEeGU7IqK4hoajg"/>
+    <links xmi:type="CoupledLink" xmi:id="_-P-Z6yrqEeGU7IqK4hoajg" target="_-P9ywCrqEeGU7IqK4hoajg" source="_-P-Z3yrqEeGU7IqK4hoajg"/>
+    <links xmi:type="CoupledLink" xmi:id="_-P-Z7CrqEeGU7IqK4hoajg" target="_-P9ytSrqEeGU7IqK4hoajg" source="_-P-Z3yrqEeGU7IqK4hoajg"/>
+    <links xmi:type="CoupledLink" xmi:id="_-P-Z7SrqEeGU7IqK4hoajg" target="_-P-Z2irqEeGU7IqK4hoajg" source="_-P9yvCrqEeGU7IqK4hoajg"/>
+    <links xmi:type="CoupledLink" xmi:id="_-P-Z7irqEeGU7IqK4hoajg" target="_-P-Z2yrqEeGU7IqK4hoajg" source="_-P9yvSrqEeGU7IqK4hoajg"/>
+    <links xmi:type="CoupledLink" xmi:id="_-P-Z7yrqEeGU7IqK4hoajg" target="_-P9ytirqEeGU7IqK4hoajg" source="_-P9yvCrqEeGU7IqK4hoajg"/>
+    <links xmi:type="CoupledLink" xmi:id="_-P-Z8CrqEeGU7IqK4hoajg" target="_-P9ytyrqEeGU7IqK4hoajg" source="_-P9yvSrqEeGU7IqK4hoajg"/>
+    <links xmi:type="CoupledLink" xmi:id="_-P-Z8SrqEeGU7IqK4hoajg" target="_-P9ysSrqEeGU7IqK4hoajg" source="_-P-Z3irqEeGU7IqK4hoajg"/>
+  </CoupledModelType>
+  <notation:Diagram xmi:id="_-P_A0CrqEeGU7IqK4hoajg" type="DEVS" element="_-P9ysCrqEeGU7IqK4hoajg" name="FSCM.madesigner" measurementUnit="Pixel">
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_-P_A0SrqEeGU7IqK4hoajg"/>
+  </notation:Diagram>
+</xmi:XMI>
